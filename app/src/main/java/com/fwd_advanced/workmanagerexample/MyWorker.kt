@@ -19,7 +19,7 @@ class MyWorker(context: Context, workerParameters: WorkerParameters) :
         const val NOTIFICATION_ID = 1
     }
     override fun doWork(): Result {
-        Log.d("success",
+        Log.d("successWorker",
             "doWork: Success function called")
         showNotification()
         return Result.success()    }
